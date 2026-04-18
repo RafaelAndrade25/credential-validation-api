@@ -27,7 +27,7 @@ public class CorenValidationService {
     }
 
     public ValidationResponseDTO validate(String coren, String uf) {
-        String key = coren + "-" + uf;
+        String key = "Coren-" + uf + " " + coren;
         log.info("Validando COREN: {}", key);
 
         CorenData data = VALID_CORENS.get(key);

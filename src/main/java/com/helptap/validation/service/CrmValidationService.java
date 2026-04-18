@@ -30,7 +30,7 @@ public class CrmValidationService {
     }
 
     public ValidationResponseDTO validate(String crm, String uf) {
-        String key = crm + "-" + uf;
+        String key = "CRM/" + uf + " " + crm;
         log.info("Validando CRM: {}", key);
 
         CrmData data = VALID_CRMS.get(key);

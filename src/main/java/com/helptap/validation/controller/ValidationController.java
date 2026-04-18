@@ -18,7 +18,7 @@ public class ValidationController {
 
     private final ValidationService validationService;
 
-    @Value("${validation.api.key}")
+    @Value("${validation.api.key:default-secret-key}")
     private String validApiKey;
 
     /**
